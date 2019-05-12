@@ -35,5 +35,6 @@ my $numX = 73 - $rem;
 print "$numX \n";
 
 #the remainder after numbX less the total days of the following month
-#print "($numbX) $R[$mon + 1]\n";
-
+# $totalDaysfollowingMonth = $numX-$R[$mon + 1];
+my $dfm =  $numX-$R[$mon + 1];
+print "$dfm\n";
