@@ -1,0 +1,15 @@
+@month is an array of month names
+@R is an array of 12 month lengths(31,28,31,30,31,30,31,31,30,31,30,31);
+@mon is an array of digits 0 - 11.
+
+remember/store the incrementing value for $mon in a variableB 
+
+Subtract the current day of the month from 73(remainder(rem));
+
+store the remainder in a variable rem;
+
+less $R[$mon]+1 from rem = (valueX);
+
+if valueX > 31 =>less $R[$mon]+2 from valueX
+
+print/read the result of month[variableB] valueX to give +73 days local
