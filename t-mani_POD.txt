@@ -4,12 +4,11 @@
 
 remember/store the incrementing value for $mon in a variableB 
 
-Subtract the current day of the month from 73(remainder(rem));
-
-store the remainder in a variable rem;
+Subtract 73 from the current day of the month and,
+store the difference in a variable rem;
 
 less $R[$mon]+1 from rem = (valueX);
 
 if valueX > 31 =>less $R[$mon]+2 from valueX
 
-print/read the result of month[variableB] valueX to give +73 days local
+print/read the result of $month[variableB] valueX(days)  to give +73 days local
