@@ -28,13 +28,17 @@ print "$months[$mon] $mday\n"; #$days[$wday]\n";
 
 my @R = (31,29,31,30,31,30,31,31,30,31,30,31);
 my $rem = $R[$mon] - $mday;
-print "$rem days remaining in @array[$mon]\n";
 
+if($rem != 1){
+    print "$rem days remaining in @array[$mon]\n";
+} else {
+    print "$rem day remaining in @array[$mon]\n";
+}
 #take 73 less the remainder of days this month
 my $numX = 73 - $rem;
 print "$numX \n";
 
 #the remainder after numbX less the total days of the following month
 # $totalDaysfollowingMonth = $numX-$R[$mon + 1];
-my $dfm =  $numX-$R[$mon + 1];
+$dfm =  $numX-$R[$mon + 1];
 print "$dfm\n";
