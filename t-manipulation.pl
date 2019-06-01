@@ -47,6 +47,16 @@ if($num > $mL){
 }
 
 # remainder after the total days of the following month
-
 print "$mL[$mon] days in month $array[$mon]\n";
+
+
+print ($num - $mL[$mon]);
+print" $array[$mon+1]\n";
+
+
+if($num > $mL){
+    $mon = $mon + 1;
+    $rem = $rem - $mL[$mon];
+}
+
 
