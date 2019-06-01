@@ -1,10 +1,14 @@
-#!usr/pkg/bin/perl
+#!/usr/pkg/bin/perl
+use strict;
+use warnings;
+use CGI;
 
-print "Content-type: text/html\n\n";
-print "<font size=+>Environment</font>\n";
+my $q = new CGI;
+my $now = localtime;
 
-foreach (sort keys %ENV) {
-	print "<b>$_</b>: $ENV{$_}<br>\n";
-}
-
-1;
+print $q->header;
+print $q->start_html;
+print $q->title('server time');
+print $q->h1("Hello World!"),
+print $q->p("The time on this server now is $now");
+print $q->end_html;
